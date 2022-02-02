@@ -40,13 +40,26 @@ const getAllPostings = async (req, res) => {
   }
 };
 
-const getPostingsByLocation = async (req, res) => {
+const getByLocation = async (req, res) => {
   try {
-    const city = req.params.location;
+    const { city }= req.body;
     //validateObjectId(id);
-    const postings = await User.find({location: location});
-    if (!postings) {
-      throw new Error(`It is no postings in ${location}`);
+    const postings = await Posting.find({"details.location": city});
+    if (postings.length == 0) {
+      throw new Error(`It is no postings in ${city}`);
+    }
+    res.status(200).send({ postings: postings });
+  } catch (error) {
+    res.status(404).send({ error: error.message });
+  }
+};
+const getByProfession = async (req, res) => {
+  try {
+    const { profession } = req.body;
+    //validateObjectId(id);
+    const postings = await Posting.find({"details.profession": profession});
+    if (postings.length == 0) {
+      throw new Error(`It is no postings for ${profession}`);
     }
     res.status(200).send({ postings: postings });
   } catch (error) {
@@ -68,14 +81,30 @@ const deletePosting = async (req, res) => {
 
 const updatePosting = async (req, res) => {
   const id = req.params.id;
-  const email = req.body.email;
-  const phone = req.body.phone;
+  const {
+    email,
+    phone,
+    title,
+    profession,
+    location,
+    description,
+    salary,
+    skillsMust,
+    skillsNice } = req.body;
   try {
     validateObjectId(id);
    // validateNumber(creditAmount);
-    const posting = await User.findById(id);
-    posting.email = email;
-    posting.phone = phone;
+    const posting = await Posting.findById(id);
+    if (email) posting.email = email;
+    if (phone) posting.phone = phone;
+    if (title) posting.title = title;
+    if (profession) posting.details.profession = profession;
+    if (location) posting.details.location = location;
+    if (description) posting.details.description = description;
+    if (salary) posting.details.salary = salary;
+    if (skillsMust) posting.details.skillsMust = skillsMust;
+    if (skillsNice) posting.details.skillsNice = skillsNice;
+    posting.date = Date.now();
     const updatedPosting = await posting.save();
     res.status(200).send({ message: `Posting updated successfuly` });
   } catch (error) {
@@ -83,4 +112,4 @@ const updatePosting = async (req, res) => {
   }
 };
 
-module.exports = { getAllPostings, addPosting, getPostingsByLocation, deletePosting, updatePosting };
+module.exports = { getAllPostings, addPosting, getByLocation, getByProfession, deletePosting, updatePosting };

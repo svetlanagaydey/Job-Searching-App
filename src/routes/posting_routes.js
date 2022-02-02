@@ -4,18 +4,21 @@ const postingRouter = express.Router();
 const {
   getAllPostings,
   addPosting,
-  getPostingsByLocation,
+  getByLocation,
+  getByProfession,
   deletePosting,
   updatePosting,
 } = require("../controllers/controllers");
 
 postingRouter.get("/", getAllPostings);
 
-postingRouter.get("/:location", getPostingsByLocation);
+postingRouter.get("/location", getByLocation);
+
+postingRouter.get("/profession", getByProfession);
 
 postingRouter.post("/", addPosting);
 
-postingRouter.put("/updateposting/:id", updatePosting);
+postingRouter.put("/update/:id", updatePosting);
 
 postingRouter.delete("/:id", deletePosting);
 
