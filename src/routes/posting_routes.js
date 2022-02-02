@@ -10,7 +10,7 @@ const {
   updatePosting,
 } = require("../controllers/controllers");
 
-postingRouter.get("/", getAllPostings);
+postingRouter.get("/all", getAllPostings);
 
 postingRouter.get("/location", getByLocation);
 

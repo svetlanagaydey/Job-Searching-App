@@ -6,3 +6,10 @@
     display: flex; 
     justify-content: space-around;
 }
+.button__show-all {
+    display: block;
+    width: 300px;
+    text-align: center;
+    line-height: 4;
+    border: 1px solid black;
+}

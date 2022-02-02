@@ -15,11 +15,11 @@ function App() {
         <Routes> 
             <Route path="/" exact element={<StartPage/>}/>
             <Route path="/postings" element={<PostingsPage/>}/>
-            <Route path="/posting" element={<PostingPage/>}/>
+            {/* <Route path="/posting" element={<PostingPage/>}/>
             <Route path="/addPosting" element={<AddPostingPage/>}/>
             <Route path="/updatePosting" element={<UpdatePostingPage/>}/>
             <Route path="/deletePosting" element={<DeletePostingPage/>}/>
-            <Route path="/article" element={<ArticlePage/>}/>
+            <Route path="/article" element={<ArticlePage/>}/> */}
         </Routes> 
       </div>
     </Router>

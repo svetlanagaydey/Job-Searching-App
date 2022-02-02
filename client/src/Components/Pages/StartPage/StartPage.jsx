@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import "./index.css";
 import DropDownSearch from "../../DropDownSearch/DropDownSearch";
 import HeaderMain from "../../HeaderMain/HeaderMain";
@@ -23,8 +24,11 @@ const StartPage = () => {
         <div className="container">
             <HeaderMain />
             <div className="searching-block">
-                <DropDownSearch searchingData={cities} />
-                <DropDownSearch searchingData={professions} />
+                <DropDownSearch searchingData={cities} searchType="location"/>
+                <DropDownSearch searchingData={professions} searchType="profession" />
+                <Link to="/postings" className="button__show-all">
+                    Show all postings
+                </Link>
             </div>
         </div>
     )
