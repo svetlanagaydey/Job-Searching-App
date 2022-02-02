@@ -9,7 +9,7 @@ const postingSchema = new mongoose.Schema({
     },
     email: {
         type: String,
-        unique: true,
+        // unique: true,
         required: true,
         trim: true,
         lowercase: true,
@@ -24,15 +24,47 @@ const postingSchema = new mongoose.Schema({
         required: true,
         minlength: 7,
         trim: true,
-        validate(value) {
-            if (value.toLowerCase().includes('password')) {
-                throw new Error('Password cannot contain "password"')
-            }
+        // validate(value) {
+        //     if (value.toLowerCase().includes('password')) {
+        //         throw new Error('Password cannot contain "password"')
+        //     }
+        // }
+    },
+    date: {
+        type: Date,
+        default: Date.now
+    },
+    details: {
+        title: {
+            type: String,
+            required: true,
+            trim: true
+        },
+        profession: {
+            type: String,
+            required: true
+        },
+        location: {
+            type: String,
+            required: true
+        },
+        description: {
+            type: String,
+            required: true
+        },
+        salary: {
+            type: Number
+        },
+        skillsMust: {
+            type: Array,
+        },
+        skillsNice: {
+            type: Array,
         }
     }
 })
 
 
 
-const Posting = mongoose.model('User', postingSchema)
-module.exports = Posting
+const Posting = mongoose.model('Posting', postingSchema)
+module.exports = Posting;

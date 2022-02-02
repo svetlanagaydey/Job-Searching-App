@@ -1,10 +1,29 @@
 const Posting = require("../models/posting");
-//const { validateObjectId, validateNumber } = require("./utils");
+const { validateObjectId, validateNumber } = require("./utils");
 
 const addPosting = async (req, res) => {
   try {
-    const { company, email, phone } = req.body;
-    const posting = new Posting({ company: company, email:email || 0, phone:phone || 0});
+    const {
+      company,
+      email,
+      phone,
+      details } = req.body;
+      
+    const posting = new Posting(
+      {
+        company: company,
+        email:email,
+        phone:phone,
+        details: {
+          title:details.title,
+          profession:details.profession,
+          location:details.location,
+          description:details.description,
+          salary:details.salary,
+          skillsMust:details.skillsMust,
+          skillsNice:details.skillsNice
+        }
+      });
     await posting.save();
     res.status(200).send({ message: "Added Successfully" });
   } catch (error) {
