@@ -1,0 +1,23 @@
+.header {
+    max-width: 1920px;
+    display: flex;
+    justify-content: space-between;
+    padding: 3vmin;
+    border-bottom: 1px solid black;
+    margin: auto;
+}
+.header__logo {
+    width: 100px;
+    height: 100px;
+    display: block;
+    border: 1px dotted red;
+}
+.header__post-job-button {
+    width: 400px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 2vmin;
+}

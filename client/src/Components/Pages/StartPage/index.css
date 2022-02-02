@@ -1,0 +1,8 @@
+.container {
+    max-width: 100vw;
+    background-color: rgb(252, 227, 231)
+}
+.searching-block {
+    display: flex; 
+    justify-content: space-around;
+}
