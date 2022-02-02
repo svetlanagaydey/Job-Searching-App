@@ -14,13 +14,7 @@ const DropDownSearch = (props) => {
     <div className="searchin-button">
         <input list={placeholder} placeholder={placeholder} className="serching-input"/>
         <datalist id={placeholder} className="options-list" onChange={handleChange}>
-            {optionList.map((option) => {
-                return (
-                <option
-                    value={option}
-                    >
-                </option>)  
-            })}
+            {optionList.map((option) => <option value={option}></option>)}
         </datalist>
     </div>
     );
