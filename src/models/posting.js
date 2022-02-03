@@ -67,4 +67,4 @@ const postingSchema = new mongoose.Schema({
 
 
 const Posting = mongoose.model('Posting', postingSchema)
-module.exports = Posting;
+module.exports = Posting

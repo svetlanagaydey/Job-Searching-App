@@ -21,13 +21,14 @@ const professions = {
 }
 
 const StartPage = () => {
-    const [searchReq, setSearchReg] = useState({location: "", profession: ""});
+    const [searchReq, setSearchReg] = useState({});
     useEffect(() => {
         console.log("state: ",searchReq);
      }, [searchReq]);
     const onchange = (e) => {
         const searchKey = e.target.placeholder;
         const searchValue = e.target.value;
+        //setSearchReg({[searchKey]:searchValue})
         setSearchReg({ ...searchReq, [searchKey]:searchValue})
     }
     return (
@@ -36,6 +37,9 @@ const StartPage = () => {
             <div className="searching-block">
                 <DropDownSearch searchingData={cities} onChange={onchange}/>
                 <DropDownSearch searchingData={professions}  onChange={onchange} />
+                <Link to={{pathname:"/filterdPostings", state:{searchReq}}} className="button__filter">
+                    Filtered postings
+                </Link>
                 <Link to="/postings" className="button__show-all">
                     Show all postings
                 </Link>

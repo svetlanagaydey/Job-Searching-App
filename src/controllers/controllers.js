@@ -42,11 +42,11 @@ const getAllPostings = async (req, res) => {
 
 const getByLocation = async (req, res) => {
   try {
-    const { city }= req.body;
+    const { location }= req.body;
     //validateObjectId(id);
-    const postings = await Posting.find({"details.location": city});
+    const postings = await Posting.find({"details.location": location});
     if (postings.length == 0) {
-      throw new Error(`It is no postings in ${city}`);
+      throw new Error(`It is no postings in ${location}`);
     }
     res.status(200).send({ postings: postings });
   } catch (error) {

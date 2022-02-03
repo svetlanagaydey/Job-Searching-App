@@ -2,6 +2,7 @@ import React from 'react';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import StartPage from './Components/Pages/StartPage/StartPage';
 import PostingsPage from './Components/Pages/PostingsPage/PostingsPage';
+import FilterdPostings from './Components/Pages/FilteredPostings/FilteredPostings'
 import PostingPage from './Components/Pages/PostingPage/PostingPage';
 import AddPostingPage from './Components/Pages/AddPostingPage/AddPostingPage';
 import UpdatePostingPage from './Components/Pages/UpdatePostingPage/UpdatePostingPage';
@@ -15,8 +16,9 @@ function App() {
         <Routes> 
             <Route path="/" exact element={<StartPage/>}/>
             <Route path="/postings" element={<PostingsPage/>}/>
-            {/* <Route path="/posting" element={<PostingPage/>}/>
+            <Route path="/filterdPostings" element={<FilterdPostings/>}/>
             <Route path="/addPosting" element={<AddPostingPage/>}/>
+            {/* <Route path="/posting" element={<PostingPage/>}/>
             <Route path="/updatePosting" element={<UpdatePostingPage/>}/>
             <Route path="/deletePosting" element={<DeletePostingPage/>}/>
             <Route path="/article" element={<ArticlePage/>}/> */}
