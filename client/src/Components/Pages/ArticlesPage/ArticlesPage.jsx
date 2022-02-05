@@ -1,19 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import HeaderMain from '../../HeaderMain/HeaderMain';
-import ArticlesSideList from '../../ArticlesSideList/ArticlesSideList'
+import ArticlesSideList from '../../ArticlesSideList/ArticlesSideList';
+import ActiveArticle from '../../ActiveArticle/ActiveArticle';
 import './index.css'
-import { set } from 'mongoose';
 
 const ArticlesPage = () => {
 	const [activeIndex, setActiveIndex] = useState(0);
 
 	useEffect (() => {
-		
     console.log("active index: "+activeIndex)
   }, [activeIndex])
 
 	const onActiveIndex = (index) => {
-		console.log(index)
 		setActiveIndex(index);
 	}
     return (
@@ -25,6 +23,7 @@ const ArticlesPage = () => {
 						<ArticlesSideList onActiveIndex={onActiveIndex} />
 					</div>
 					<div className="main__article">
+						<ActiveArticle activeIndex={activeIndex}/>
 					</div>
 				</main>
 			</div>
