@@ -13,3 +13,15 @@
     line-height: 4;
     border: 1px solid black;
 }
+.main {
+    display: flex;
+    
+}
+.main__all-postings {
+    width: 70%;
+    border: 1px solid green;
+}
+.main__articles-menu {
+    width: 30%;
+    border: 1px solid red;
+}

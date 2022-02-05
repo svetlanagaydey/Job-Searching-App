@@ -7,7 +7,7 @@ import PostingPage from './Components/Pages/PostingPage/PostingPage';
 import AddPostingPage from './Components/Pages/AddPostingPage/AddPostingPage';
 import UpdatePostingPage from './Components/Pages/UpdatePostingPage/UpdatePostingPage';
 import DeletePostingPage from './Components/Pages/DeletePostingPage/DeletePostingPage';
-import ArticlePage from './Components/Pages/ArticlePage/ArticlePage';
+import ArticlesPage from './Components/Pages/ArticlesPage/ArticlesPage';
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
             <Route path="/postings" element={<PostingsPage/>}/>
             <Route path="/filterdPostings" element={<FilterdPostings/>}/>
             <Route path="/addPosting" element={<AddPostingPage/>}/>
+            <Route path="/articles" element={<ArticlesPage/>} />
             {/* <Route path="/posting" element={<PostingPage/>}/>
             <Route path="/updatePosting" element={<UpdatePostingPage/>}/>
             <Route path="/deletePosting" element={<DeletePostingPage/>}/>

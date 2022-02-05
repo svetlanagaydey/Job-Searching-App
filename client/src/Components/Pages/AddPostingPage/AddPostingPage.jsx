@@ -40,13 +40,6 @@ const AddPostingPage = () => {
                 email,
                 phone,
                 details
-                    //title,
-                    // profession,
-                    // location,
-                    // salary,
-                    // description,
-                    // skillsMust
-                
             });
         } catch (err) {
             console.log(err.message);

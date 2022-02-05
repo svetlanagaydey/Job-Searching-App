@@ -4,11 +4,11 @@ import myApi from '../../../api/Api'
 //import { useParams } from 'react-router-dom';
 import './index.css';
 
-const PostingsPage = (props) => {
+const PostingsPage = () => {
     const [data, setData] = useState([]);
 
-    useEffect(() => {
-       getReq()
+  useEffect(() => {
+    getReq()
 	}, []);
 
 	const getReq = async () => {
@@ -32,10 +32,10 @@ const PostingsPage = (props) => {
                 <span className="job-location">{posting.location}</span>
                 <span className="job-salary">{posting.details.salary}</span>
                 <div className="job-description">
-                      <div>{posting.details.description}</div>
-                      <ul className="job-skillsMust">
-                          {posting.details.skillsMust.map((skill) => <li key={skill}>{skill}</li>)}
-                      </ul>
+                  <div>{posting.details.description}</div>
+                  <ul className="job-skillsMust">
+                    {posting.details.skillsMust.map((skill) => <li key={skill}>{skill}</li>)}
+                  </ul>
                 </div>
 							</div>
 						</li>

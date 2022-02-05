@@ -1,0 +1,12 @@
+.main__articles {
+    display: flex;
+    width: 100%;
+}
+.main__article {
+    width: 70%;
+    border: 1px solid green;
+}
+.articles-side-menu {
+    width: 30%;
+    border: 1px solid red;
+}

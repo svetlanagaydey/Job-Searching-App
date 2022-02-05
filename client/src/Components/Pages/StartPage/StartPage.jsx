@@ -34,7 +34,7 @@ const StartPage = () => {
     return (
         <div className="container">
             <HeaderMain />
-            <div className="searching-block">
+            <section className="searching-block">
                 <DropDownSearch searchingData={cities} onChange={onchange}/>
                 <DropDownSearch searchingData={professions}  onChange={onchange} />
                 <Link to={{pathname:"/filterdPostings", state:{searchReq}}} className="button__filter">
@@ -43,7 +43,16 @@ const StartPage = () => {
                 <Link to="/postings" className="button__show-all">
                     Show all postings
                 </Link>
-            </div>
+            </section>
+            <main className="main">
+                <div className="main__all-postings" >
+
+                </div>
+                <div className="main__articles-menu">
+
+                </div>
+            </main>
+            <footer className="footer"></footer>
         </div>
     )
 }
