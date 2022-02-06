@@ -12,7 +12,7 @@ const {
 
 postingRouter.get("/all", getAllPostings);
 
-postingRouter.get("/location", getByLocation);
+postingRouter.post("/location", getByLocation);
 
 postingRouter.get("/profession", getByProfession);
 

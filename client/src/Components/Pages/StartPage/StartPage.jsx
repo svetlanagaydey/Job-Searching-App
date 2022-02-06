@@ -33,13 +33,16 @@ const StartPage = () => {
         //setSearchReg({[searchKey]:searchValue})
         setSearchReg({ ...searchReq, [searchKey]:searchValue})
     }
+    const setLocalStorage = () => {
+        localStorage.setItem("searchFilter", searchReq);
+    }
     return (
         <div className="container">
             <HeaderMain />
             <section className="searching-block">
                 <DropDownSearch searchingData={cities} onChange={onchange}/>
                 <DropDownSearch searchingData={professions}  onChange={onchange} />
-                <Link to={{pathname:"/filterdPostings", state:{searchReq}}} className="button__filter">
+                <Link to="/filterdPostings" state={searchReq} onClick={setLocalStorage} className="button__filter">
                     Filtered postings
                 </Link>
                 <Link to="/postings" className="button__show-all">

@@ -16,7 +16,7 @@ function App() {
         <Routes> 
             <Route path="/" exact element={<StartPage/>}/>
             <Route path="/postings" element={<PostingsPage/>}/>
-            <Route path="/filterdPostings" element={<FilterdPostings/>}/>
+            <Route path="/filterdPostings" element={<FilterdPostings />}/>
             <Route path="/addPosting" element={<AddPostingPage/>}/>
             <Route path="/articles" element={<ArticlesPage/>} />
             {/* <Route path="/posting" element={<PostingPage/>}/>
