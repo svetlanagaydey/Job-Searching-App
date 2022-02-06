@@ -5,7 +5,7 @@ import myApi from '../../../api/Api'
 import './index.css';
 
 const PostingsPage = () => {
-    const [data, setData] = useState([]);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     getReq()
@@ -29,7 +29,7 @@ const PostingsPage = () => {
 							<div className="info-block">
                 <h3>{posting.details.title}</h3>
                 <span className="job-company">{posting.company}</span>
-                <span className="job-location">{posting.location}</span>
+                <span className="job-location">{posting.details.location}</span>
                 <span className="job-salary">{posting.details.salary}</span>
                 <div className="job-description">
                   <div>{posting.details.description}</div>

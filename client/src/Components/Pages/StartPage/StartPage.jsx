@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import "./index.css";
 import DropDownSearch from "../../DropDownSearch/DropDownSearch";
 import HeaderMain from "../../HeaderMain/HeaderMain";
+import ArticlesSideMain from "../../ArticlesSideMain/ArticlesSideMain";
+import LastPostingsMain from "../../LastPostingsMain/LastPostingsMain"
 import { useState, useEffect } from 'react';
 
 const cities = {
@@ -46,10 +48,10 @@ const StartPage = () => {
             </section>
             <main className="main">
                 <div className="main__all-postings" >
-
+                    <LastPostingsMain />
                 </div>
                 <div className="main__articles-menu">
-
+                    <ArticlesSideMain />
                 </div>
             </main>
             <footer className="footer"></footer>

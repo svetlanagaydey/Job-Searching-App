@@ -4,7 +4,7 @@ import './index.css';
 const HeaderMain = () => {
    return (
        <header className="header">
-           <img src="" alt="logo" className="header__logo"/>
+           <Link to="/" className="header__logo"/>
            <Link to="/articles" className="header__post-job-button">
                Articles
            </Link>

@@ -8,7 +8,8 @@ const ArticlesPage = () => {
 	const [activeIndex, setActiveIndex] = useState(0);
 
 	useEffect (() => {
-    console.log("active index: "+activeIndex)
+		//console.log("index from main: "+ index)
+    	console.log("active index: "+activeIndex)
   }, [activeIndex])
 
 	const onActiveIndex = (index) => {

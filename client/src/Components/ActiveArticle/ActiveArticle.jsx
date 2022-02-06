@@ -12,6 +12,7 @@ const ActiveArticle = ({activeIndex}) => {
                     <div key={part.subtitle}>
                         <h3>{part.subtitle}</h3>
                         <p>{part.text}</p>
+                        <p>{part.example}</p>
                     </div>
                 )
             })}
