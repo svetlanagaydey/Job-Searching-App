@@ -60,9 +60,7 @@ const getByLocation = async (req, res) => {
       });
       res.status(200).send( postings );
     }
-
     //validateObjectId(id);
-    
     // if (postings.length == 0) {
     //   throw new Error(`It is no postings in ${location}`);
     // }

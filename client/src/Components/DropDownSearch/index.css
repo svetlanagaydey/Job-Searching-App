@@ -1,14 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Glegoo&family=Indie+Flower&family=Marcellus+SC&family=Permanent+Marker&family=Rajdhani:wght@400;500&family=Redressed&family=Vast+Shadow&display=swap');
+
 .searching-button {
-   width: 400px;
+  border-radius: 18px;
+  
 }
 .serching-input {
     margin: 0;
     width: 400px;
     padding: 2vmin;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    opacity: 70%;
+    font-family: 'Marcellus SC', serif;
+    font-size: 1.4vmin;
+    text-transform: uppercase;
 }
-.options-list {
-    width: 400px;
-    position: absolute;
-    left: 0;
-    top: 0%;
+.serching-input {
+    padding-right: 1vmin;
+ background-repeat: no-repeat;
+ background-position: right;
+}
+.search-location {
+    background-image: url("images/loc.png");
+}
+.search-profession {
+    background-image: url("images/prof.png");
 }

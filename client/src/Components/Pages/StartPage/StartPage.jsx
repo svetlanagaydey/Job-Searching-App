@@ -40,6 +40,7 @@ const StartPage = () => {
         <div className="container">
             <HeaderMain />
             <section className="searching-block">
+                <div className="search-container">
                 <DropDownSearch searchingData={cities} onChange={onchange}/>
                 <DropDownSearch searchingData={professions}  onChange={onchange} />
                 <Link to="/filterdPostings" state={searchReq} onClick={setLocalStorage} className="button__filter">
@@ -48,6 +49,8 @@ const StartPage = () => {
                 <Link to="/postings" className="button__show-all">
                     Show all postings
                 </Link>
+                </div>
+                
             </section>
             <main className="main">
                 <div className="main__all-postings" >

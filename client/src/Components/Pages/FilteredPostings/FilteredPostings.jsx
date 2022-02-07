@@ -16,14 +16,6 @@ const FilteredPostings = () => {
     const getReq = async () => {
         try {
             const { data } = await myApi.post('/location', req);
-            //const { data } = await axios.post("http://localhost:8080/location", req)
-            // let config = {
-            //     data: JSON.stringify(req),
-            //     method: "get",
-            //   };
-            // console.log("location request")
-            // console.log(req);
-            // const data = await a('/location', config);
             console.log(data);
         } catch (e) {
             setIsFinded(false);
@@ -42,9 +34,7 @@ const FilteredPostings = () => {
             <h2>You choose filter by professiion: {req.profession}</h2>
             <h2>You choose filter by location: {req.location}</h2>
             {!isFinded && errorMessage()}
-
             {/* {datas.map(el => console.log(el))} */}
-
         </div>
     )
 }

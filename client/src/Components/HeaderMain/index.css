@@ -1,23 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Permanent+Marker&family=Rajdhani:wght@400;500&family=Redressed&family=Vast+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Glegoo&family=Indie+Flower&family=Permanent+Marker&family=Rajdhani:wght@400;500&family=Redressed&family=Vast+Shadow&display=swap');
 .header {
+        width: 100vw;
+        padding: 3vmin;
+        background-image: url("images/back-image.jpg");
+        /* background: #3a3f77; */
+/* background-color: rgb(2, 2, 77); */
+}
+.header-container {
     max-width: 1920px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
-    padding: 3vmin;
-    border-bottom: 1px solid black;
-    margin: auto;
 }
-.header__logo {
-    width: 100px;
-    height: 100px;
-    display: block;
-    border: 1px dotted red;
-}
-.header__post-job-button {
+.header__logo-link {
     width: 400px;
+    height: 120px;
+    display: flex;
+}
+.logo-text {
+    margin-left: 1vmin;
+    display: block;
+    font-family: 'Redressed', cursive;
+    font-size: 3vmin;
+    color:white;
+}
+.logo-text-first {
+    display: block;
+    color: lightblue;
+}
+
+.header__button {
+    width: 300px;
     height: 100px;
     text-align: center;
+    font-family: 'Glegoo', serif;
     line-height: 100px;
-    border: 1px solid black;
+    border: 1px solid white;
+    color: white;
     border-radius: 8px;
     font-size: 2vmin;
+}
+.button-post {
+    width: 400px;
+    border: 2px solid white;
+    font-weight: bold;
+}
+.header__button:hover {
+    
+    box-shadow: 0 0 10px 0 white inset, 0 0 20px 2px white;
 }
