@@ -42,13 +42,31 @@ const getAllPostings = async (req, res) => {
 
 const getByLocation = async (req, res) => {
   try {
-    const { location } = req.body;
-    //validateObjectId(id);
-    const postings = await Posting.find({"details.location": location});
-    if (postings.length == 0) {
-      throw new Error(`It is no postings in ${location}`);
+    const { location, profession } = req.body;
+    if (location && profession) {
+      const postings = await Posting.find({
+        "details.location": location,
+        "details.profession": profession
+      });
+      res.status(200).send( postings );
+    } else if (location && !profession) {
+      const postings = await Posting.find({
+        "details.location": location
+      });
+      res.status(200).send( postings );
+    } else if (profession && !location) {
+      const postings = await Posting.find({
+        "details.profession": profession
+      });
+      res.status(200).send( postings );
     }
-    res.status(200).send( postings );
+
+    //validateObjectId(id);
+    
+    // if (postings.length == 0) {
+    //   throw new Error(`It is no postings in ${location}`);
+    // }
+    
   } catch (error) {
     res.status(404).send({ error: error.message });
   }
