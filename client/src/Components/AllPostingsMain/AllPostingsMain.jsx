@@ -19,6 +19,9 @@ const PostingsPage = () => {
       console.log(e);
     }
 	};
+	const changeVisible = function(id) {
+		document.getElementById(id).classList.toggle('visible');
+}
   
 	const print = () => {
 		return (
@@ -40,23 +43,26 @@ const PostingsPage = () => {
 									<span className="field-name">Salary: </span>
 									<span className="job-salary">{posting.details.salary}</span>
 								</div>
-								<div className="job-description">
-									<div className="field">
-										<h4 className="field-name">Job description: </h4>
-										{posting.details.description}
+								<button className="show-hide-button" onClick={() => changeVisible(`id${ind}`)}>SHOW / HIDE</button>
+								<div id={`id${ind}`} className="hidden-block">
+									<div className="job-description">
+										<div className="field">
+											<h4 className="field-name">Job description: </h4>
+											{posting.details.description}
+										</div>
+										<h4 className="field-name">Skills must to have</h4>
+										<ul className="field job-skills-must">
+												{posting.details.skillsMust.map((skill) => <li key={skill} className="skill">{skill}</li>)}
+										</ul>
 									</div>
-									<h4 className="field-name">Skills must to have</h4>
-									<ul className="field job-skills-must">
-											{posting.details.skillsMust.map((skill) => <li key={skill} className="skill">{skill}</li>)}
-									</ul>
-								</div>
-								<div className="field">
-									<span className="field-name">Phone Number: </span>
-									<span className="job-company">{posting.phone}</span>
-								</div>
-								<div className="field">
-									<span className="field-name">Email for rezume: </span>
-									<span className="job-company">{posting.email}</span>
+									<div className="field">
+										<span className="field-name">Phone Number: </span>
+										<span className="job-company">{posting.phone}</span>
+									</div>
+									<div className="field">
+										<span className="field-name">Email for rezume: </span>
+										<span className="job-company">{posting.email}</span>
+									</div>
 								</div>
 							</div>
 						</li>

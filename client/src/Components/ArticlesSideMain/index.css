@@ -8,7 +8,7 @@
     opacity: 80%;
 }
 .main__articles-header {
-    font-size: 2.4vmin;
+    font-size: 2vmin;
     /* font-family: 'Redressed', cursive; */
     font-family: 'Glegoo', serif;
     font-style: italic;
@@ -23,12 +23,12 @@
     padding-bottom: 1vmin;
 }
 .main__article-title {
-    font-size: 2.5vmin;
+    font-size: 2vmin;
     color: rgb(59, 173, 215);
     padding: 1.5vmin 0;
 }
 .main__article-desc {
-    font-size: 2vmin;
+    font-size: 1.5vmin;
     padding: 1.5vmin 0;
     color: rgb(6, 6, 71);
 }

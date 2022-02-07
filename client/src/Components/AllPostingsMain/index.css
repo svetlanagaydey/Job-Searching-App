@@ -3,6 +3,9 @@
 .all-jobs-block {
     padding: 2vmin;
 }
+.info-block {
+    position: relative;
+}
 .jobs-list {
     color: black;
 }
@@ -39,6 +42,18 @@
     font-size: 1.6vmin;
     padding-left: 2vmin;
 }
-.skill {
-   
+.show-hide-button {
+    padding: 2vmin;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-family: 'Marcellus SC', serif;
+    font-size: 2vmin;
+
+}
+.hidden-block {
+    display: none;
+}
+.visible {
+    display: block;
 }
