@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Glegoo&family=Indie+Flower&family=Marcellus+SC&family=Permanent+Marker&family=Rajdhani:wght@400;500&family=Redressed&family=Vast+Shadow&display=swap');
+
+.back-container {
+    min-height: 100vh;
+    background-color: rgb(33, 33, 58);
+    font-family: 'Marcellus SC', serif;
+}
+.filtered-postings__block {
+    max-width: 1920px;
+    margin: auto;
+    padding: 4vmin 0;
+    text-align: center;
+}
+.request-info {
+    display: flex;
+    justify-content: space-around;
+}
+.search-req {
+    font-size: 2vmin;
+    color: lightblue;
+}
+.request {
+    font-size: 2.5vmin;
+    color: white;
+    font-style: italic;
+}
+.error-message {
+    padding: 3vmin;
+    width: fit-content;
+    margin: 7vmin auto;
+   
+    color: lightblue;
+    border: 8px solid lightcoral;
+    background-color: white;
+    font-size: 3vmin;
+   
+}

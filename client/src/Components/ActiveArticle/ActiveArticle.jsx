@@ -13,7 +13,8 @@ const ActiveArticle = ({activeIndex}) => {
                     <div key={part.subtitle}>
                         <h3 className="active-article__subtitle">{part.subtitle}</h3>
                         <p className="active-article__text">{part.text}</p>
-                        <p>{part.example}</p>
+                        {part.example && <p className="active-article__example">{part.example}</p>}
+                        
                     </div>
                 )
             })}

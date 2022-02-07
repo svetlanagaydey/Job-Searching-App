@@ -40,6 +40,10 @@ const PostingsPage = () => {
 									<span className="job-location">{posting.details.location}</span>
 								</div>
 								<div className="field">
+									<span className="field-name">Profession category: </span>
+									<span className="job-location">{posting.details.profession}</span>
+								</div>
+								<div className="field">
 									<span className="field-name">Salary: </span>
 									<span className="job-salary">{posting.details.salary}</span>
 								</div>
