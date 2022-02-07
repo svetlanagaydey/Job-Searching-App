@@ -12,7 +12,6 @@
 }
 .searching-block {
     margin: auto;
-    
 }
 .search-container {
     max-width: 1920px;
@@ -30,7 +29,6 @@
     border-radius: 50%;
     font-family: 'Marcellus SC', serif;
     font-size: 2vmin;
-   
     background-color: white;
     opacity: 70%;
 }
@@ -47,11 +45,10 @@
     background-color: rgb(33, 33, 58);
 }
 .main__all-postings {
-    width: 80%;
-  
+    width: 70%;
 }
 .main__articles-menu {
-    width: 20%;
+    width: 25%;
     padding: 5vmin 0 5vmin 5vmin;
 }
 .main__all-postings {

@@ -1,6 +1,7 @@
 import HeaderMain from '../../HeaderMain/HeaderMain';
 import { useState, useEffect } from 'react';
 import myApi from '../../../api/Api';
+import './index.css'
 
 const AddPostingPage = () => {
     const [company, setCompany] = useState("");
@@ -54,65 +55,74 @@ const AddPostingPage = () => {
         
 
 return (
-    <div>
+    <div className="back">
         <HeaderMain />
-        <form className="form" onSubmit={setNewPost}>
-          <div className="form-field">
-            <label>Company</label>
-            <input type="text" name="company" value={company}
-              onChange={(e) => {setCompany(e.target.value)}}
-            />
-          </div>
-          <div className="form-field">
-            <label>Email</label>
-            <input type="text" name="email" value={email}
-              onChange={(e) => {setEmail(e.target.value)}}
-            />
-          </div>
-          <div className="form-field">
-            <label>Phone number</label>
-            <input type="text" name="phone" value={phone}
-              onChange={(e) => { setPhone(e.target.value)}}
-            />
-          </div>
+        <div className="form-container">
+          <h2 className="form-title">Create new job posting</h2>
+          <form className="form" onSubmit={setNewPost}>
+            <div className="form-field">
+              <label className="field-label">Company Name For This job</label>
+              <input type="text" name="company" value={company}
+                onChange={(e) => {setCompany(e.target.value)}}
+              />
+            </div>
+            <div className="form-field">
+              <label className="field-label">Company Email</label>
+              <input type="text" name="email" value={email}
+                onChange={(e) => {setEmail(e.target.value)}}
+              />
+            </div>
+            <div className="form-field">
+              <label className="field-label">Company Phone Number</label>
+              <input type="text" name="phone" value={phone}
+                onChange={(e) => { setPhone(e.target.value)}}
+              />
+            </div>
 
-          <div className="form-field">
-            <label>Job title</label>
-            <input type="text" name="title" 
-              onChange={onHandleChange}
-            />
-          </div>
+            <div className="form-field">
+              <label className="field-label">Job Title</label>
+              <input type="text" name="title" 
+                onChange={onHandleChange}
+              />
+            </div>
 
-          <div className="form-field">
-            <label>Profession</label>
-            <input type="text" name="profession" 
-              onChange={onHandleChange}
-            />
-          </div>
+            <div className="form-field">
+              <label className="field-label">Profession</label>
+              <input type="text" name="profession" 
+                onChange={onHandleChange}
+              />
+            </div>
 
-          <div className="form-field">
-            <label>Location</label>
-            <input type="text" name="location" 
-              onChange={onHandleChange}
-            />
-          </div>
+            <div className="form-field">
+              <label className="field-label">Location</label>
+              <input type="text" name="location" 
+                onChange={onHandleChange}
+              />
+            </div>
 
-          <div className="form-field">
-            <label>Salary</label>
-            <input type="text" name="salary" 
-              onChange={onHandleChange}
-            />
-          </div>
+            <div className="form-field">
+              <label className="field-label">Salary</label>
+              <input type="text" name="salary" 
+                onChange={onHandleChange}
+              />
+            </div>
 
-          <div className="form-field">
-            <label>Description</label>
-            <textarea type="text" name="description" 
-              onChange={onHandleChange}
-            />
-          </div>
-          
-          <input className="addButton" type="submit" value="Add new post" />
-        </form>
+            <div className="form-field">
+              <label className="field-label">Job Description</label>
+              <textarea type="text" name="description" className="field-description" cols="40"
+                onChange={onHandleChange}
+              />
+            </div>
+            <div className="form-field">
+              <label className="field-label">Skills Must to Have</label>
+              <textarea type="text" name="skills" className="field-description" cols="40"
+                onChange={onHandleChange}
+              />
+            </div>
+            
+            <input className="addButton" type="submit" value="Add new post" />
+          </form>
+        </div>
     </div>
 )
 }
