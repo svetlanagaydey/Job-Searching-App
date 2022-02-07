@@ -5,8 +5,10 @@
 .main__article {
     width: 70%;
     border: 1px solid green;
+    color: black;
 }
 .articles-side-menu {
     width: 30%;
     border: 1px solid red;
+    color: black;
 }

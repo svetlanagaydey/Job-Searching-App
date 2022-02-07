@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Permanent+Marker&family=Rajdhani:wght@400;500&family=Redressed&family=Vast+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Glegoo&family=Indie+Flower&family=Permanent+Marker&family=Rajdhani:wght@400;500&family=Redressed&family=Vast+Shadow&display=swap');
+
+.main__articles-block {
+    padding: 1vmin;
+    background-color:rgb(244, 244, 244);
+    border-radius: 5px;
+    opacity: 80%;
+}
+.main__articles-header {
+    font-size: 2.4vmin;
+    /* font-family: 'Redressed', cursive; */
+    font-family: 'Glegoo', serif;
+    font-style: italic;
+    color: rgb(6, 6, 71);
+    margin-bottom: 1vmin; 
+    padding-bottom: 2vmin;
+    border-bottom: 1px dotted  rgb(59, 173, 215); 
+}
+.main__article-side {
+    margin-bottom: 1.5vmin;
+    border-bottom: 1px dotted rgb(59, 173, 215);
+    padding-bottom: 1vmin;
+}
+.main__article-title {
+    font-size: 2.5vmin;
+    color: rgb(59, 173, 215);
+    padding: 1.5vmin 0;
+}
+.main__article-desc {
+    font-size: 2vmin;
+    padding: 1.5vmin 0;
+    color: rgb(6, 6, 71);
+}

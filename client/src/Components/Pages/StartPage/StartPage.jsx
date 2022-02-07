@@ -4,7 +4,8 @@ import "./index.css";
 import DropDownSearch from "../../DropDownSearch/DropDownSearch";
 import HeaderMain from "../../HeaderMain/HeaderMain";
 import ArticlesSideMain from "../../ArticlesSideMain/ArticlesSideMain";
-import LastPostingsMain from "../../LastPostingsMain/LastPostingsMain"
+// import LastPostingsMain from "../../LastPostingsMain/LastPostingsMain";
+import AllPostingsMain from "../../AllPostingsMain/AllPostingsMain"
 import { useState, useEffect } from 'react';
 
 const cities = {
@@ -37,24 +38,27 @@ const StartPage = () => {
         localStorage.setItem("searchFilter", searchReq);
     }
     return (
-        <div className="container">
-            <HeaderMain />
-            <section className="searching-block">
-                <div className="search-container">
-                <DropDownSearch searchingData={cities} onChange={onchange}/>
-                <DropDownSearch searchingData={professions}  onChange={onchange} />
-                <Link to="/filterdPostings" state={searchReq} onClick={setLocalStorage} className="button__filter">
-                    Filtered postings
-                </Link>
-                <Link to="/postings" className="button__show-all">
-                    Show all postings
-                </Link>
-                </div>
-                
-            </section>
-            <main className="main">
+        <div className="back-image">
+            <div className="back-image">
+                <HeaderMain />
+                <section className="searching-block .width-container">
+                    <div className="search-container">
+                    <DropDownSearch searchingData={cities} onChange={onchange}/>
+                    <DropDownSearch searchingData={professions}  onChange={onchange} />
+                    <Link to="/filterdPostings" state={searchReq} onClick={setLocalStorage} className="search searching-button">
+                        {/* Filtered postings */}
+                    </Link>
+                    {/* <Link to="/postings" className="button__show-all">
+                        Show all postings
+                    </Link> */}
+                    </div>
+                    
+                </section>
+            </div>
+            
+            <main className="main width-container">
                 <div className="main__all-postings" >
-                    <LastPostingsMain />
+                    <AllPostingsMain />
                 </div>
                 <div className="main__articles-menu">
                     <ArticlesSideMain />

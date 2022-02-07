@@ -17,12 +17,15 @@
 }
 .serching-input {
     padding-right: 1vmin;
- background-repeat: no-repeat;
- background-position: right;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 .search-location {
     background-image: url("images/loc.png");
 }
 .search-profession {
     background-image: url("images/prof.png");
+}
+.search {
+    background: none;
 }

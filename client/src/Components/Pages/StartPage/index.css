@@ -1,33 +1,62 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Glegoo&family=Indie+Flower&family=Marcellus+SC&family=Permanent+Marker&family=Rajdhani:wght@400;500&family=Redressed&family=Vast+Shadow&display=swap');
+.back-image {
+    /* background-image: url("images/background.jpg");
+    background-size: cover; */
+    background-color: rgb(33, 33, 58);
+}
+
+.width-container{
+    max-width: 1920px;
+    margin: auto;
+}
 .searching-block {
-    width: 100%;
-    min-height: 700px;
-    background-image: url("images/background.jpg");
-    background-size: cover;
+    margin: auto;
+    
 }
 .search-container {
     max-width: 1920px;
     margin: auto;
     display: flex; 
     justify-content: space-around;
-    line-height: 300px;
+    align-items: center;
+    padding: 10vmin 0;
+    border-bottom: 1px dotted lightgray;
+}
+.searching-block .search {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-family: 'Marcellus SC', serif;
+    font-size: 2vmin;
+   
+    background-color: white;
+    opacity: 70%;
 }
 .button__show-all {
     display: block;
     width: 300px;
+    height: 100px;
     text-align: center;
     line-height: 4;
     border: 1px solid black;
 }
 .main {
     display: flex;
-    
+    background-color: rgb(33, 33, 58);
 }
 .main__all-postings {
-    width: 70%;
-    border: 1px solid green;
+    width: 80%;
+  
 }
 .main__articles-menu {
-    width: 30%;
-    border: 1px solid red;
+    width: 20%;
+    padding: 5vmin 0 5vmin 5vmin;
+}
+.main__all-postings {
+    margin: 5vmin 0;
+    border-radius: 5px;
+    background-color:rgb(244, 244, 244);
+    opacity: 80%;
 }

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Glegoo&family=Indie+Flower&family=Marcellus+SC&family=Permanent+Marker&family=Rajdhani:wght@400;500&family=Redressed&family=Vast+Shadow&display=swap');
+
+.all-jobs-block {
+    padding: 2vmin;
+}
+.jobs-list {
+    color: black;
+}
+.all-jobs__header {
+    font-family: 'Marcellus SC', serif;
+
+    color: rgb(33, 33, 58);
+    text-align: center;
+    font-size: 3.5vmin;
+    margin-bottom: 2vmin;
+}
+.posting {
+    margin: 1vmin;
+    padding: 1vmin;
+    border: 1px dotted rgb(33, 33, 58);
+}
+.job-title {
+    margin-bottom: 1vmin;
+    font-family: 'Marcellus SC', serif;
+    font-size: 2.5vmin;
+}
+.field {
+    font-size: 1.6vmin;
+    margin-bottom: 1vmin;
+}
+.field-name {
+    font-size: 1.6vmin;
+    font-weight: bold;
+    color: rgb(60, 132, 187);
+}
+.job-skills-must {
+    color:  rgb(33, 33, 58);
+    list-style-type: square;
+    font-size: 1.6vmin;
+    padding-left: 2vmin;
+}
+.skill {
+   
+}

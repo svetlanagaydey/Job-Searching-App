@@ -1,20 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ARTICLES_LIST from '../ArticlesSideList/ARTICLES_LIST'
+import ARTICLES_LIST from '../ArticlesSideList/ARTICLES_LIST';
+import './index.css'
 
 const ArticlesSideMain = ({onActiveIndex}) => {
     const hideDescription = (string) => {
 		return `${string.substring(0, 200)}...`
 	}
  return (
-     <ul>
-         <h2>Last Articles for Helping You</h2>
+     <ul className="main__articles-block">
+         <h2 className="main__articles-header">Last Articles for Helping You</h2>
          {ARTICLES_LIST.slice(0, 3).map((article, index) => {
              return(
-                 <li className="main__articles-side-list" onClick={()=>onActiveIndex(index)} key={article.title}>
+                 <li className="main__article-side" onClick={()=>onActiveIndex(index)} key={article.title}>
                     <Link to="/articles">
-                        <h3>{article.title}</h3>
-                        <p>{hideDescription(article.description)}</p>
+                        <h3 className="main__article-title">{article.title}</h3>
+                        <p className="main__article-desc">{hideDescription(article.description)}</p>
                     </Link>
                  </li>
              )
