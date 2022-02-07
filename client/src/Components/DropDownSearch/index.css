@@ -10,13 +10,9 @@
     padding: 2vmin;
     border: 1px solid transparent;
     border-radius: 6px;
-    opacity: 70%;
     font-family: 'Marcellus SC', serif;
     font-size: 1.4vmin;
     text-transform: uppercase;
-}
-.serching-input {
-    padding-right: 1vmin;
     background-repeat: no-repeat;
     background-position: right;
 }

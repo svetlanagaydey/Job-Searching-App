@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Glegoo&family=Indie+Flower&family=Marcellus+SC&family=Permanent+Marker&family=Rajdhani:wght@400;500&family=Redressed&family=Vast+Shadow&display=swap');
+.active-article__block {
+    background-color: rgb(244, 244, 244);
+    padding: 2vmin;
+    color:  rgb(33, 33, 58);
+    border-radius: 10px;
+}
+.active-article__title {
+    font-family: 'Marcellus SC', serif;
+    font-size: 4vmin;
+    font-style: italic;
+    margin-bottom: 2vmin;
+}
+.active-article__description {
+    font-size: 1.8vmin;
+    line-height: 1.5;
+}
+.active-article__subtitle {
+    padding: 2vmin 0;
+   
+    font-size: 2.5vmin;
+    color: rgb(99, 191, 211);
+}
+.active-article__text {
+    font-size: 1.8vmin;
+    line-height: 1.5;
+}

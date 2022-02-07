@@ -1,4 +1,5 @@
-import ARTICLES_LIST from "./ARTICLES_LIST"
+import ARTICLES_LIST from "./ARTICLES_LIST";
+import './index.css'
 const ArticlesSideList = ({onActiveIndex}) => {
 
 	const hideDescription = (string) => {
@@ -8,7 +9,7 @@ const ArticlesSideList = ({onActiveIndex}) => {
 		<ul className="articlesList">
 			{ARTICLES_LIST.map((article, ind) => {
 				return (
-					<li key={article.title} onClick={()=>onActiveIndex(ind)} className="articles-lits__title">
+					<li key={article.title} onClick={()=>onActiveIndex(ind)} className="article-item">
 						<h3 className="articles-list__title">{article.title}</h3>
 						<p className="articles-list__description">{hideDescription(article.description)}</p>
 					</li>

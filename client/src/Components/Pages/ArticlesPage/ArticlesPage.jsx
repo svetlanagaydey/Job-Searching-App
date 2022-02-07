@@ -16,17 +16,19 @@ const ArticlesPage = () => {
 		setActiveIndex(index);
 	}
     return (
-			<div>
+			<div className="back">
 				<HeaderMain />
-				<h2>Articles</h2>
-				<main className="main__articles">
-					<div className="articles-side-menu">
-						<ArticlesSideList onActiveIndex={onActiveIndex} />
-					</div>
-					<div className="main__article">
-						<ActiveArticle activeIndex={activeIndex}/>
-					</div>
-				</main>
+				<div className="articles-container">
+					<main className="main__articles">
+						<div className="articles-side-menu">
+							<ArticlesSideList onActiveIndex={onActiveIndex} />
+						</div>
+						<div className="main__article">
+							<ActiveArticle activeIndex={activeIndex}/>
+						</div>
+					</main>
+				</div>
+				
 			</div>
     )
 }

@@ -30,7 +30,7 @@
     font-family: 'Marcellus SC', serif;
     font-size: 2vmin;
     background-color: white;
-    opacity: 70%;
+ 
 }
 .button__show-all {
     display: block;
@@ -55,5 +55,5 @@
     margin: 5vmin 0;
     border-radius: 5px;
     background-color:rgb(244, 244, 244);
-    opacity: 80%;
+    
 }

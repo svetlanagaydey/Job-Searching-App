@@ -1,0 +1,11 @@
+.article-item {
+    padding-bottom: 2vmin ;
+    margin-bottom: 2vmin;
+    border-bottom: 1px dotted white;
+}
+.articles-list__title {
+    font-size: 2vmin;
+    
+    padding-bottom: 1vmin;
+    color: rgb(99, 191, 211);
+}

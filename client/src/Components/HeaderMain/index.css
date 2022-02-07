@@ -51,6 +51,5 @@
     font-weight: bold;
 }
 .header__button:hover {
-    
     box-shadow: 0 0 10px 0 white inset, 0 0 20px 2px white;
 }
