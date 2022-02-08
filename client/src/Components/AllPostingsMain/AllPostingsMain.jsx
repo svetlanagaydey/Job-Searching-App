@@ -28,7 +28,7 @@ const PostingsPage = () => {
 			<ul className="jobs-list">
 				{data.map((posting, ind) => {
 					return (
-						<li className="posting" key={ind}>
+						<li className="posting" key={ind} _id={posting._id}>
 							<div className="info-block">
 								<h3 className="job-title">{posting.details.title}</h3>
 								<div className="field">

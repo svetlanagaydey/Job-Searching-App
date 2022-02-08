@@ -37,20 +37,20 @@ const FilteredPostings = () => {
 									<div className="info-block">
 										<h3 className="job-title">{posting.details.title}</h3>
 										<div className="field">
-												<span className="field-name">Company: </span>
-												<span className="job-company">{posting.company}</span>
+											<span className="field-name">Company: </span>
+											<span className="job-company">{posting.company}</span>
 										</div>
 										<div className="field">
-												<span className="field-name">Job Location: </span>
-												<span className="job-location">{posting.details.location}</span>
+											<span className="field-name">Job Location: </span>
+											<span className="job-location">{posting.details.location}</span>
 										</div>
 										<div className="field">
-												<span className="field-name">Profession category: </span>
-												<span className="job-location">{posting.details.profession}</span>
+											<span className="field-name">Profession category: </span>
+											<span className="job-location">{posting.details.profession}</span>
 										</div>
 										<div className="field">
-												<span className="field-name">Salary: </span>
-												<span className="job-salary">{posting.details.salary}</span>
+											<span className="field-name">Salary: </span>
+											<span className="job-salary">{posting.details.salary}</span>
 										</div>
 										
 										<div className="job-description">
@@ -68,9 +68,9 @@ const FilteredPostings = () => {
 											<span className="job-company">{posting.phone}</span>
 										</div>
 										<div className="field">
-												<span className="field-name">Email for rezume: </span>
-												<span className="job-company">{posting.email}</span>
-											</div>
+											<span className="field-name">Email for rezume: </span>
+											<span className="job-company">{posting.email}</span>
+										</div>
 									</div>
 								</li>
 								);

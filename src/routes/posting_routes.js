@@ -5,7 +5,7 @@ const {
   getAllPostings,
   addPosting,
   getByLocation,
-  getByProfession,
+  getByCompany,
   deletePosting,
   updatePosting,
 } = require("../controllers/controllers");
@@ -14,7 +14,7 @@ postingRouter.get("/all", getAllPostings);
 
 postingRouter.post("/location", getByLocation);
 
-postingRouter.get("/profession", getByProfession);
+postingRouter.post("/company", getByCompany);
 
 postingRouter.post("/", addPosting);
 

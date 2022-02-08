@@ -70,13 +70,13 @@ const getByLocation = async (req, res) => {
   }
 };
 
-const getByProfession = async (req, res) => {
+const getByCompany = async (req, res) => {
   try {
-    const { profession } = req.body;
+    const { company } = req.body;
     //validateObjectId(id);
-    const postings = await Posting.find({"details.profession": profession});
+    const postings = await Posting.find({"company": company});
     if (postings.length == 0) {
-      throw new Error(`It is no postings for ${profession}`);
+      throw new Error(`It is no postings for ${company}`);
     }
     res.status(200).send({ postings: postings });
   } catch (error) {
@@ -129,4 +129,4 @@ const updatePosting = async (req, res) => {
   }
 };
 
-module.exports = { getAllPostings, addPosting, getByLocation, getByProfession, deletePosting, updatePosting };
+module.exports = { getAllPostings, addPosting, getByLocation, getByCompany, deletePosting, updatePosting };
