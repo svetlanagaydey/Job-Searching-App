@@ -19,9 +19,9 @@ function App() {
             <Route path="/addPosting" element={<AddPostingPage/>}/>
             <Route path="/articles" element={<ArticlesPage/>} />
             <Route path="/employers" element={<EmployersPage/>} />
-            {/* <Route path="/posting" element={<PostingPage/>}/>
+            {/* <Route path="/posting" element={<PostingPage/>}/>*/}
             <Route path="/updatePosting" element={<UpdatePostingPage/>}/>
-            <Route path="/deletePosting" element={<DeletePostingPage/>}/>*/}
+            <Route path="/deletePosting" element={<DeletePostingPage/>}/>
         </Routes> 
       </div>
     </Router>

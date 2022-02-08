@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import myApi from '../../api/Api';
-// import './index.css'
+import './index.css'
 
 const PostingsOneCompany = ({req}) => {
 	// const [isFinded, setIsFinded] = useState(true)
@@ -34,6 +34,7 @@ const PostingsOneCompany = ({req}) => {
         {data.map((posting, ind) => {
           return (
             <li className="posting" key={ind} _id={posting._id}>
+              <div className="epmloyers-posting">
               <div className="info-block">
                 <h3 className="job-title">{posting.details.title}</h3>
                 <div className="field">
@@ -54,8 +55,9 @@ const PostingsOneCompany = ({req}) => {
                 </div>
               </div>
               <div className="update-delete-buttons">
-                <Link to="/updatePosting" type="button" value="Update" className="update-button"/>
-                <Link to="/deletePosting" type="button" value="Delete" className="delete-button"/>
+                <Link to="/updatePosting" type="button" className="update-button">Update</Link>
+                <Link to="/deletePosting" type="button" className="delete-button">Delete</Link>
+              </div>
               </div>
             </li>
           );
