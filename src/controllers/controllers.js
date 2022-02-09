@@ -99,28 +99,20 @@ const deletePosting = async (req, res) => {
 const updatePosting = async (req, res) => {
   const id = req.params.id;
   const {
+    company,
     email,
     phone,
-    title,
-    profession,
-    location,
-    description,
-    salary,
-    skillsMust,
-    skillsNice } = req.body;
+    details
+  } = req.body;
   try {
     validateObjectId(id);
    // validateNumber(creditAmount);
     const posting = await Posting.findById(id);
-    if (email) posting.email = email;
-    if (phone) posting.phone = phone;
-    if (title) posting.title = title;
-    if (profession) posting.details.profession = profession;
-    if (location) posting.details.location = location;
-    if (description) posting.details.description = description;
-    if (salary) posting.details.salary = salary;
-    if (skillsMust) posting.details.skillsMust = skillsMust;
-    if (skillsNice) posting.details.skillsNice = skillsNice;
+    posting.company =company;
+    posting.email = email;
+    posting.phone = phone;
+    posting.details = details
+
     posting.date = Date.now();
     const updatedPosting = await posting.save();
     res.status(200).send({ message: `Posting updated successfuly` });

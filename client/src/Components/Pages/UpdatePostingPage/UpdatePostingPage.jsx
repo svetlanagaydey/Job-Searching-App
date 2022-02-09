@@ -1,7 +1,8 @@
 import React, { useState , useEffect } from 'react';
 import HeaderMain from '../../HeaderMain/HeaderMain';
 import { useLocation } from "react-router-dom";
-
+import myApi from '../../../api/Api';
+import './index.css';
 
 const UpdatePostingPage = () => {
   const [company, setCompany] = useState("");
@@ -15,9 +16,20 @@ const UpdatePostingPage = () => {
   const posting = JSON.parse(currentPosting);
   console.log(posting.company);
 
-  const updatePosting = (e) => {
+  const updatePosting = async(e) => {
     e.preventDefault();
-    console.log("start");
+    try {  
+      await myApi.put(`/update/${posting._id}`, {
+          company,
+          email,
+          phone,
+          details
+      });
+      console.log("updated from client")
+  } catch (err) {
+      console.log(err.message);
+  }
+    //console.log("start");
   }
   useEffect(() => {
     setCompany(posting.company);
@@ -40,7 +52,7 @@ const UpdatePostingPage = () => {
       <HeaderMain />
       <h2 className="all-jobs__header">Updating form</h2>
       <h3>Update Needed Fields And Press SAVE</h3>
-      <form onSubmit={updatePosting} className="form">
+      <form onSubmit={updatePosting} className="form center">
         <div className="form-field">
           <label htmlFor="company" className="field-label">Company Name</label>
           <input type="text"
@@ -82,7 +94,7 @@ const UpdatePostingPage = () => {
         </div>
         
         <div className="form-field">
-          <label className="">Job Title</label>
+          <label className="field-label">Job Title</label>
           <input type="text"
           className="field-value"
             name="title"
@@ -121,7 +133,7 @@ const UpdatePostingPage = () => {
             </div>
 
 
-        <input type="submit" value="SUBMIT" className=""/>
+        <input type="submit" value="SAVE" className="submit-button"/>
       </form>
     </div>
   )

@@ -1,4 +1,13 @@
-.field-label,
-.field-value {
-    color: black;
+.center {
+    margin: auto;
+}
+.submit-button {
+    padding: 3vmin 10vmin;
+    width: 50%;
+    border: 5px solid rgb(12, 12, 89);
+    color: rgb(12, 12, 89);
+    background-color: lightblue;
+    border-radius: 5px;
+    margin: auto;
+    font-size: 3vmin;
 }
