@@ -5,8 +5,8 @@ import { useLocation } from "react-router-dom";
 import './index.css'
 
 const FilteredPostings = () => {
-		const [isFinded, setIsFinded] = useState(true)
-		const [data, setData] = useState()
+		const [isFinded, setIsFinded] = useState(true);
+		const [data, setData] = useState();
     const location = useLocation();
     const req = location.state;
     console.log(req);
@@ -80,27 +80,26 @@ const FilteredPostings = () => {
 			}
 
     const errorMessage = () => {
-        return <div className="error-message">try enother searching request</div>
+      return <div className="error-message">try enother searching request</div>
 		}
 		
     return (
-        <div className="back-container">
-            <HeaderMain />
-            <main className="filtered-postings__block">
-                <div className="request-info">
-                    <h2 className="search-req">choosen profession: 
-                        <span className="request"> {req.profession}</span>
-                    </h2>
-                    <h2 className="search-req">choosen location: 
-                        <span className="request"> {req.location}</span>
-                    </h2>
-                </div>
-                {!isFinded && errorMessage()}
-                {/* {datas.map(el => console.log(el))} */}
-                {data && printFilteredPostings()}
-            </main>
-            
-        </div>
+      <div className="back-container">
+        <HeaderMain />
+        <main className="filtered-postings__block">
+          <div className="request-info">
+            <h2 className="search-req">choosen profession: 
+                <span className="request"> {req.profession}</span>
+            </h2>
+            <h2 className="search-req">choosen location: 
+                <span className="request"> {req.location}</span>
+            </h2>
+          </div>
+          {!isFinded && errorMessage()}
+          {/* {datas.map(el => console.log(el))} */}
+          {data && printFilteredPostings()}
+        </main>
+      </div>
     )
 }
 export default FilteredPostings;
