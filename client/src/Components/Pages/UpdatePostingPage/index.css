@@ -11,10 +11,10 @@
     margin: auto;
     font-size: 3vmin;
 }
-body {
+/* body {
     background-color: rgb(33, 33, 58);
     min-height: 100vw;
-}
+} */
 .success-message {
     padding: 3vmin;
     width: fit-content;

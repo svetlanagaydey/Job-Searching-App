@@ -56,7 +56,7 @@ const PostingsOneCompany = ({req}) => {
               </div>
               <div className="update-delete-buttons">
                 <Link to="/updatePosting" type="button" className="update-button" state={JSON.stringify(posting)}>Update</Link>
-                <Link to="/deletePosting" type="button" className="delete-button">Delete</Link>
+                <Link to="/deletePosting" type="button" className="delete-button" state={JSON.stringify(posting)}>Delete</Link>
               </div>
               </div>
             </li>
