@@ -11,3 +11,16 @@
     margin: auto;
     font-size: 3vmin;
 }
+body {
+    background-color: rgb(33, 33, 58);
+    min-height: 100vw;
+}
+.success-message {
+    padding: 3vmin;
+    width: fit-content;
+    margin: 7vmin auto;
+    color: lightblue;
+    border: 8px solid lightblue;
+    background-color: white;
+    font-size: 3vmin;
+}

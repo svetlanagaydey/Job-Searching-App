@@ -2,6 +2,7 @@
     padding-bottom: 2vmin ;
     margin-bottom: 2vmin;
     border-bottom: 1px dotted white;
+    color: white;
 }
 .articles-list__title {
     font-size: 2vmin;
