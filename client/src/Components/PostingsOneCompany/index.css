@@ -1,8 +1,42 @@
-.epmloyers-posting {
+
+.employer__posting {
+    padding: 3vmin;
+    margin: 2vmin 0;
+    border-radius: 10px;
+    background-color: #f4f3f4; 
     display: flex;
+    
     justify-content: space-between;
-    padding: 1vmin 6vmin;
 }
+.posting-middle {
+
+    width: 70%;
+}
+.employer__info-block {
+  
+    display: flex;
+    flex-wrap: wrap;
+}
+.employer__field {
+    width: 40%;
+}
+.employer__info-block .field {
+    padding: 1vmin;
+    border-radius: 10px;
+    background-color: #fffeff;
+}
+
+.field-name {
+    font-size: 22px;
+   color: rgb(152, 151, 151);
+    font-weight: normal;
+    font-style: italic;
+}
+.field-value {
+    font-size: 22px;
+    font-weight: normal;
+}
+
 .update-delete-buttons {
     display: flex;
     flex-direction: column;
@@ -10,16 +44,23 @@
 }
 .update-button,
 .delete-button {
-    color: rgb(33, 33, 58);
-    /* background-color: lightblue; */
-    padding: 2vmin 5vmin;
+    color: rgb(62, 136, 160);
+    padding: 1vmin 5vmin;
     font-size: 2vmin;
-    border: 4px solid rgb(33, 33, 58);
+    border: 4px solid rgb(62, 136, 160);
     border-radius: 5px;
 }
 .delete-button {
-    color: red;
+    color:  rgb(247, 96, 96);
     background-color: white;
-    border: 4px dotted red;
-
+    border-color:  rgb(247, 96, 96);
+} 
+.update-button:hover {
+    color: white;
+    background-color: rgb(62, 136, 160);
+}
+.delete-button:hover {
+    color: white;
+    background-color: rgb(247, 96, 96);
+    border: 4px dotted rgb(247, 96, 96);
 }

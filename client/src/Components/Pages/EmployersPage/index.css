@@ -1,43 +1,39 @@
 
-.employers-page {
-    background-color: rgb(33, 33, 58);
-}
-.epmloyers-container {
-    max-width: 1920px;
-    margin: auto;
-}
 .employers__functions {
     padding: 5vmin 0;
-    text-align: center;
     display: flex;
-    justify-content: space-around;
+}
+.employers-header {
+    color: white;
+    font-weight: 200;
+    margin-bottom: 3vmin;
+
 }
 .employers__input {
-    padding: 1.5vmin;
-    width: 300px;
-    font-size: 1.5vmin;
+    padding: 1.2vmin;
+    width: 100%;
+    font-size: 20px;
     border-radius: 5px;
 }
 .eployers__input-block {
     display: flex;
     flex-direction: column;
-    font-size: 2vmin;
+    font-size: 28px;
     color: lightblue;
 }
 .eployers__input-block label {
     margin-bottom: 2vmin;
 }
-.company-search__button {
-    display: inline;
-    padding: 2vmin;
-}
-.new-post-button {
+
+.find-button {
     color: rgb(33, 33, 58);
-    padding: 5vmin;
-    margin-left: 25vmin;
-    border: 2px solid white;
-    background-color: lightblue;
+    padding: 1.1vmin 5vmin;
+    margin-left: 7vmin;
+    background-color: #5bafc8;
+    color: white;
+    border: 2px solid #5bafc8;
     border-radius: 5%;
-    font-family: 'Redressed', cursive;
-    font-size: 3vmin;
+    align-self: flex-end;
+    font-size: 20px;
+    font-weight: 100;
 }

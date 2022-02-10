@@ -26,39 +26,45 @@ const PostingsOneCompany = ({req}) => {
 			} catch (e) {
 				console.log("ERROR FROM REACT ", e);
 			}
-	};
+  };
+  const hiddenDescription = (string) => {
+    return string.substring(0, 175) + " ..."
+  }
 
   const printFilteredPostings = () => {
     return (
-      <ul className="jobs-list">
+      <ul className="employer__jobs-list">
         {data.map((posting, ind) => {
           return (
-            <li className="posting" key={ind} _id={posting._id}>
-              <div className="epmloyers-posting">
-              <div className="info-block">
-                <h3 className="job-title">{posting.details.title}</h3>
-                <div className="field">
-                  <span className="field-name">Company: </span>
-                  <span className="job-company">{posting.company}</span>
+            <li className="employer__posting" key={ind} _id={posting._id}>
+              <div className={`company-logo ${posting.company}-logo`}></div>
+                <div className="posting-middle">
+                  <h3 className="job-title">{posting.details.title}</h3>
+                  <div className="employer__info-block">
+                  <div className="field">
+                    <span className="field-name">Company: </span>
+                    <span className="field-value">{posting.company}</span>
+                  </div>
+                  <div className="field">
+                    <span className="field-name">Job Location: </span>
+                    <span className="field-value">{posting.details.location}</span>
+                  </div>
+                  <div className="field">
+                    <span className="field-name">Profession category: </span>
+                    <span className="field-value">{posting.details.profession}</span>
+                  </div>
+                  <div className="field">
+                    <span className="field-name">Salary: </span>
+                    <span className="field-value">{posting.details.salary}</span>
+                  </div>
                 </div>
-                <div className="field">
-                  <span className="field-name">Job Location: </span>
-                  <span className="job-location">{posting.details.location}</span>
-                </div>
-                <div className="field">
-                  <span className="field-name">Profession category: </span>
-                  <span className="job-location">{posting.details.profession}</span>
-                </div>
-                <div className="field">
-                  <span className="field-name">Salary: </span>
-                  <span className="job-salary">{posting.details.salary}</span>
-                </div>
+                <div className='short-description visible'>{hiddenDescription(posting.details.description)}</div>
               </div>
               <div className="update-delete-buttons">
                 <Link to="/updatePosting" type="button" className="update-button" state={JSON.stringify(posting)}>Update</Link>
                 <Link to="/deletePosting" type="button" className="delete-button" state={JSON.stringify(posting)}>Delete</Link>
               </div>
-              </div>
+             
             </li>
           );
         })}

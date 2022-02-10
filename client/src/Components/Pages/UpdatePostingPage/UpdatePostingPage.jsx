@@ -54,12 +54,12 @@ const UpdatePostingPage = () => {
   }
   const updadeForm = () => {
     return (
-      <main>
-        <h2 className="all-jobs__header">Updating form</h2>
-        <form onSubmit={updatePosting} className="form center">
+      <main className="update__container">
+        <h2 className="update__header">Check and fix your form, please</h2>
+        <form onSubmit={updatePosting} className="form">
 
           <div className="form-field">
-            <label htmlFor="company" className="field-label">Company Name</label>
+            <label htmlFor="company" className="update__label">Company Name</label>
             <input type="text"
               id="company"
               className="field-value"
@@ -69,7 +69,7 @@ const UpdatePostingPage = () => {
           </div>
 
           <div className="form-field">
-            <label htmlFor="email" className="field-label">Company Email</label>
+            <label htmlFor="email" className="update__label">Company Email</label>
             <input type="text"
               id="email"
               className="field-value"
@@ -79,7 +79,7 @@ const UpdatePostingPage = () => {
           </div>
         
           <div className="form-field">
-            <label htmlFor="phone" className="field-label">Company Pnohe Number</label>
+            <label htmlFor="phone" className="update__label">Company Pnohe Number</label>
             <input type="text"
               id="phone"
               className="field-value"
@@ -89,7 +89,7 @@ const UpdatePostingPage = () => {
           </div>
           
           <div className="form-field">
-            <label htmlFor="salary" className="field-label">Salary</label>
+            <label htmlFor="salary" className="update__label">Salary</label>
             <input type="text"
               id="salary"
               name="salary"
@@ -100,7 +100,7 @@ const UpdatePostingPage = () => {
           </div>
         
           <div className="form-field">
-            <label className="field-label">Job Title</label>
+            <label className="update__label">Job Title</label>
             <input type="text"
             className="field-value"
               name="title"
@@ -110,7 +110,7 @@ const UpdatePostingPage = () => {
           </div>
 
           <div className="form-field">
-            <label className="field-label">Profession</label>
+            <label className="update__label">Profession</label>
             <input type="text"
               name="profession" 
               value={details.profession}
@@ -119,7 +119,7 @@ const UpdatePostingPage = () => {
           </div>
 
           <div className="form-field">
-            <label className="field-label">Location</label>
+            <label className="update__label">Location</label>
             <input type="text"
               name="location" 
               value={details.location}
@@ -128,23 +128,23 @@ const UpdatePostingPage = () => {
           </div>
 
           <div className="form-field">
-            <label className="field-label">Job Description</label>
+            <label className="update__label">Job Description</label>
             <textarea type="text"
               name="description"
-              className="field-description"
+              className="update__description"
               cols="40"
               value={details.description}
               onChange={onHandleChange}
             />
           </div>
 
-        <input type="submit" value="SAVE" className="submit-button"/>
+        <input type="submit" value="SAVE CHANGES" className="submit-button"/>
       </form>
       </main>
     )
   }
   return (
-    <div>
+    <div className="container">
       <HeaderMain />
       {isUpdated && succesMesage()};
       {!isUpdated && updadeForm()}

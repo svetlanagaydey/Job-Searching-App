@@ -6,48 +6,35 @@ import PostingsOneCompany from '../../PostingsOneCompany/PostingsOneCompany';
 import './index.css';
 
 const EmployersPage = () => {
+	const [input, setInput] = useState("");
 	const [company, setCompany] = useState("");
-	// const [data, setData] = useState([]);
-
-	const req = {"company": company};
-
-	// useEffect(() => {
-	// 	getReq();
-	// 	console.log(company);
-	// 	console.log(data.postings)
-	// }, [company])
-
-	// const getReq = async () => {
-  //       try {
-	// 					const { data } = await myApi.post('/company', req);
-	// 					setData(data.postings);
-  //           console.log("Data from react: ",data);
-  //           // if (data.length===0) {
-  //           //     setIsFinded(false);
-  //           // }
-  //       } catch (e) {
-  //           console.log("ERROR FROM REACT ", e);
-  //       }
-  //   };
+	useEffect(() => {
+		console.log(input)
+	}, [input])
 
 	const onHandleChange = (e) => {
-		const inputValue = e.target.value;
-		setCompany(inputValue);
+		setInput(e.target.value);
 	}
+	const getCompany = () => {
+		setCompany(input);
+	}
+	const req = {"company": company};
 	return (
-		<div className="employers-page">
+		<div className="container">
 			<HeaderMain />      
-			<div className="epmloyers-container">
-				<div className="employers__functions">
-					<div className="eployers__input-block">
-						<label>Find Your Post by Company Name</label>
-						<input type="text" className="employers__input" placeholder="Company" onChange={onHandleChange}/>
-					</div>
-					<Link to="/addPosting" className="new-post-button">Add new posting</Link>
+			<div className="employers__functions">
+				<div className="eployers__input-block">
+					<h2 className="employers-header">Find Your Post by Company Name</h2>
+					<input type="text"
+					className="employers__input"
+					placeholder="Your Company"
+					onChange={onHandleChange}
+					/>
 				</div>
-				
+				<button className="find-button" onClick={getCompany} >Find</button>
 			</div>
-			<PostingsOneCompany req={req} />
+			{company && <PostingsOneCompany req={req}/>}
+			
 		</div>
 	)
 }

@@ -1,15 +1,46 @@
-.center {
-    margin: auto;
+.update__container {
+    font-size: 20px;
 }
+.form {
+    border-radius: 10px;
+}
+.update__header {
+    color: white;
+    font-weight: normal;
+    margin: 2vmin 0;
+}
+
+.update__label {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 1vmin;
+    color: rgb(66, 162, 194);
+}
+.update__description {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    border-radius: 10px;
+    resize: none;
+    background-color: #fffeff;
+    border: none;
+    padding: 2vmin;
+    min-height: 200px;
+    width: 92%;
+    margin-bottom: 3vmin;
+      }
 .submit-button {
     padding: 3vmin 10vmin;
     width: 50%;
-    border: 5px solid rgb(12, 12, 89);
-    color: rgb(12, 12, 89);
-    background-color: lightblue;
+    color: white;
+    background-color: #5bafc8;
+    border: none;
     border-radius: 5px;
     margin: auto;
-    font-size: 3vmin;
+    font-size: 2.4vmin;
+}
+.submit-button:hover {
+    background-color:  #2686a4;
 }
 /* body {
     background-color: rgb(33, 33, 58);
