@@ -18,8 +18,11 @@ const HeaderMain = () => {
           <Link to="/articles" className="header__right-item">
             Articles
           </Link>
-          <Link to="/employers" className="header__right-item button-post">
-            EMPLOYERS / POST JOB
+          <Link to="/employers" className="header__right-item">
+            Employers
+          </Link>
+          <Link to="/addPosting" className="header__right-item button-post">
+            POST JOB
           </Link>
         </div>
 			</div>
