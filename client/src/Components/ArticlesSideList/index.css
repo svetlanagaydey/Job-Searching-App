@@ -1,12 +1,20 @@
+.articlesList {
+    background-color: #f4f3f4;
+    padding: 2vmin;
+    border-radius: 10px;
+}
 .article-item {
-    padding-bottom: 2vmin ;
+    padding: 1vmin ;
     margin-bottom: 2vmin;
-    border-bottom: 1px dotted white;
-    color: white;
+    background-color: #f4f3f4;
+    border-radius: 20px;
+    font-size: 20px;  
 }
 .articles-list__title {
-    font-size: 2vmin;
-    
+    font-size: 24px;
     padding-bottom: 1vmin;
-    color: rgb(99, 191, 211);
+}
+.article-item:hover {
+    background-color: rgb(214, 236, 244);
+    cursor: pointer;
 }

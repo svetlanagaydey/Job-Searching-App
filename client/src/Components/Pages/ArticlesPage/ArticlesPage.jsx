@@ -16,7 +16,7 @@ const ArticlesPage = () => {
 		setActiveIndex(index);
 	}
     return (
-			<div className="back">
+			<div className="container">
 				<HeaderMain />
 				<div className="articles-container">
 					<main className="main__articles">
