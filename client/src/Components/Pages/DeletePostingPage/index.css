@@ -1,17 +1,26 @@
 .delete-section {
     width: 70%;
     margin: auto;
-    opacity: 50%;
+}
+.delete__title {
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    font-weight: normal;
 }
 .delete__button {
     padding: 3vmin;
     width: 50%;
     font-size: 3vmin;
-    border: 5px solid red;
-    background-color: lightblue;
+    border: none;
+    background-color: rgb(244, 98, 98);
     border-radius: 12px;
-    color: red;
+    color: white;
     opacity: none;
     display: block;
     margin: auto;
+}
+.delete__button:hover {
+    background-color: rgb(240, 71, 71);
 }
