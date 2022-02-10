@@ -10,15 +10,15 @@
     /* border-bottom: 1px dotted lightgrey; */
 }
 .header__logo-link {
-    height: 100px;
+    height: 80px;
     display: flex;
 }
 .logo-text {
     margin-left: 1vmin;
-    line-height: 100px;
+    line-height: 80px;
     display: block;
     font-family: 'Redressed', cursive;
-    font-size: 3vmin;
+    font-size: 3.8vmin;
     color:white;
     color: lightblue;
 }
@@ -32,10 +32,10 @@
     font-size: 1.8vmin;
 }
 .header__right-item:not(:last-child) {
-    margin-right: 3vmin;
+    margin-right: 5vmin;
 }
 .button-post {
-    padding: 0 2vmin;
+    padding: 10px 30px;
     border: 2px solid white;
     font-weight: bold;
 }

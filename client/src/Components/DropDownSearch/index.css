@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Glegoo&family=Indie+Flower&family=Marcellus+SC&family=Permanent+Marker&family=Rajdhani:wght@400;500&family=Redressed&family=Vast+Shadow&display=swap');
 
 .searching-button {
-    width: 33%;
+    width: 35%;
     border-radius: 18px;
 }
 .serching-input {
     width: 100%;
-    padding: 2vmin 0 2vmin 5vmin;
+    padding: 24px 0 24px 100px;
     border: 1px solid transparent;
     border-radius: 6px;
     font-family: 'Marcellus SC', serif;
-    font-size: 1.4vmin;
+    font-size: 18px;
     /* text-transform: uppercase; */
     background-repeat: no-repeat;
     background-position-x: 20px;

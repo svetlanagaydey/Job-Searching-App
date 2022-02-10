@@ -10,7 +10,7 @@ const ArticlesSideMain = () => {
  return (
      <ul className="main__articles-block">
          <h2 className="main__articles-header">Articles for Helping You</h2>
-         {ARTICLES_LIST.slice(0, 3).map((article, index) => {
+         {ARTICLES_LIST.slice(0, 4).map((article, index) => {
              return(
                  <li className="main__article-side" key={article.title}>
                     <Link to="/articles">

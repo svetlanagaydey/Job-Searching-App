@@ -1,60 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Glegoo&family=Indie+Flower&family=Marcellus+SC&family=Permanent+Marker&family=Rajdhani:wght@400;500&family=Redressed&family=Vast+Shadow&display=swap');
 
 .all-jobs-block {
+    background-color: #f4f3f4;
+    border-radius: 20px;
     padding: 2vmin;
 }
-.info-block {
-    position: relative;
-}
-.jobs-list {
-    color: black;
-}
 .all-jobs__header {
-    font-family: 'Marcellus SC', serif;
-
+    font-family: 'Arial';
     color: rgb(33, 33, 58);
-    text-align: center;
-    font-size: 3.5vmin;
+    font-size: 40px;
     margin-bottom: 2vmin;
 }
 .posting {
     margin: 2vmin;
-    padding: 1vmin;
-    border: 1px dotted rgb(33, 33, 58);
-    background-color: white;
+    padding: 4vmin;
+    border-radius: 10px;
+    background-color: #fffeff;
+    display: flex;
+    justify-content: space-between;
 }
+.company-logo {
+    width: 100px;
+    height: 100px;
+    background-image: url(Images/v.png);
+}
+.Microsoft-logo {
+    background-image: url(Images/microsoft-logo.png);
+}
+.posting-block {
+    width: 86%;
+    position: relative;
+}
+
 .job-title {
+    margin-bottom: 3vmin;
+    font-size: 36px;
+}
+.posting__info-row {
     margin-bottom: 1vmin;
-    font-family: 'Marcellus SC', serif;
-    font-size: 2.5vmin;
+    display: flex;
 }
 .field {
-    font-size: 1.6vmin;
-    margin-bottom: 1vmin;
-}
-.field-name {
-    font-size: 1.6vmin;
+    font-size: 20px;
+    line-height: 1.8;
     font-weight: bold;
-    color: rgb(60, 132, 187);
+    margin-bottom: 1vmin;
+    background-color: #f4f3f4;
+    padding: .5vmin 1.5vmin;
+}
+.field:not(:last-child) {
+    margin-right: 1vmin;
+}
+.short-description {
+    font-size: 20px;
+    line-height: 1.8;
+    display: none;
+}
+.job-description {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    line-height: 1.8;
+}
+.job-description h4{
+    margin: 1.4vmin 0 .5vmin 0;
+    font-weight: bold;
 }
 .job-skills-must {
     color:  rgb(33, 33, 58);
-    list-style-type: square;
-    font-size: 1.6vmin;
+    list-style-image: url(Images/vv.png);
     padding-left: 2vmin;
 }
+.contact {
+    padding: 1vmin 3vmin;
+}
+.contact-info {
+    margin-top: 2.5vmin;
+}
+.contact-us {
+    margin-bottom: 2vmin;
+    font-size: 20px;
+}
+
 .show-hide-button {
-    padding: 1vmin;
+    padding: 1.2vmin;
     position: absolute;
     right: 0;
     top: 0;
-    color: white;
-    background:  rgb(33, 33, 58);
+    background: white;
     border-radius: 5px;
-    opacity: 80%;
-    font-family: 'Marcellus SC', serif;
-    font-size: 2vmin;
-
+    font-size: 22px;
+    font-weight: bold;
+    border: 3px solid #5bafc8;
+    color: #5bafc8;
 }
 .hidden-block {
     display: none;
@@ -63,5 +100,8 @@
     display: block;
 }
 .show-hide-button:hover {
-    box-shadow: 0 0 10px 0 rgb(33, 33, 58) inset, 0 0 20px 2px rgb(33, 33, 58);
+    background-color: #5bafc8;
+    color: white;
+    
+    /* box-shadow: 0 0 10px 0 rgb(33, 33, 58) inset, 0 0 20px 2px rgb(33, 33, 58); */
 }

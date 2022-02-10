@@ -47,10 +47,6 @@ const StartPage = () => {
         <Link to="/filterdPostings" state={searchReq} className="search-button">
           Find a Job
         </Link>  
-       
-        {/* <Link to="/postings" className="button__show-all">
-            Show all postings
-        </Link> */}
       </section>
      
       
