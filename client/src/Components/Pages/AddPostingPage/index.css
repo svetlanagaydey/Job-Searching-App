@@ -21,7 +21,9 @@
 }
 .form-title {
     font-size: 3vmin;
-    font-family: 'Marcellus SC', serif;
+    font-size: 30px;
+    font-weight: normal;
+    color: white;
     margin: 3vmin 0;
 }
 .form-field {
@@ -51,13 +53,23 @@
     border: none;
 }
 .addButton {
-    width: 100%;
-    padding: 2vmin;
+    padding: 2vmin 12vmin;
     font-size: 3vmin;
-    font-family: 'Marcellus SC', serif;
     color: white;
     background: rgb(61, 135, 193);
     border: 1px solid rgb(61, 135, 193);
     border-radius: 5px;
+}
+.success-mesage {
+    width: 40%;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+    border: 3px solid rgb(61, 135, 193);
+    color: rgb(61, 135, 193);
+    border-radius: 10px;
+    background-color:  rgb(225, 223, 223);
 }
 

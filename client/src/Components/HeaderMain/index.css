@@ -17,7 +17,6 @@
     margin-left: 1vmin;
     line-height: 80px;
     display: block;
-    font-family: 'Redressed', cursive;
     font-size: 3.8vmin;
     color:white;
     color: lightblue;
@@ -25,11 +24,10 @@
 
 .header__right-item {
     text-align: center;
-    font-family: 'Glegoo', serif;
     line-height: 100px;
     color: white;
     border-radius: 8px;
-    font-size: 1.8vmin;
+    font-size: 22px;
 }
 .header__right-item:not(:last-child) {
     margin-right: 5vmin;
@@ -41,4 +39,11 @@
 }
 .header__button:hover {
     box-shadow: 0 0 10px 0 white inset, 0 0 20px 2px white;
+}
+.button-post:hover {
+    background-color: white;
+    color: #5bafc8;
+}
+.header__right-item:hover {
+    color: #5bafc8;
 }

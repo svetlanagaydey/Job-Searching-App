@@ -10,7 +10,7 @@
 
 }
 .employers__input {
-    padding: 1.2vmin;
+    padding: 1.6vmin;
     width: 100%;
     font-size: 20px;
     border-radius: 5px;
@@ -27,7 +27,7 @@
 
 .find-button {
     color: rgb(33, 33, 58);
-    padding: 1.1vmin 5vmin;
+    padding: 1.5vmin 5vmin;
     margin-left: 7vmin;
     background-color: #5bafc8;
     color: white;
