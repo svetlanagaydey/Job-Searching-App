@@ -1,35 +1,31 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Glegoo&family=Indie+Flower&family=Marcellus+SC&family=Permanent+Marker&family=Rajdhani:wght@400;500&family=Redressed&family=Vast+Shadow&display=swap');
-.back-image {
-    /* background-image: url("images/background.jpg");
-    background-size: cover; */
-    background-color: rgb(33, 33, 58);
-}
+.container {
+    max-width: 1920px;
+    margin: auto;
+  }
 
-.width-container{
-    max-width: 1920px;
-    margin: auto;
-}
-.searching-block {
-    margin: auto;
-}
 .search-container {
-    max-width: 1920px;
+    width: 100%;
     margin: auto;
     display: flex; 
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 10vmin 0;
     border-bottom: 1px dotted lightgray;
 }
-.searching-block .search {
-    display: block;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+
+.search-button {
+    width: 20%;
+    text-align: center;
+    border-radius: 3%;
+    background-color: #5bafc8;
+    color: white;
+    padding: 1.8vmin 0;
+    border: 1px solid transparent;
+    border-radius: 6px;
     font-family: 'Marcellus SC', serif;
-    font-size: 2vmin;
-    background-color: white;
+    font-size: 1.7vmin;
  
 }
 .button__show-all {

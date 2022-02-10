@@ -9,7 +9,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(33, 33, 58);
+  background-color:#131b33;
+  background-image: url(assets/images/wave.svg);
+  background-repeat: no-repeat;
+  background-size: 120%;
   min-height: 100vw;
 }
 ul {
@@ -23,4 +26,9 @@ a {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container {
+  max-width: 1920px;
+  margin: auto;
 }

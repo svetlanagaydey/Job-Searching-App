@@ -1,52 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Permanent+Marker&family=Rajdhani:wght@400;500&family=Redressed&family=Vast+Shadow&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Glegoo&family=Indie+Flower&family=Permanent+Marker&family=Rajdhani:wght@400;500&family=Redressed&family=Vast+Shadow&display=swap');
 .header {
-        width: 100vw;
-        padding-top: 3vmin;
-        background-color: rgb(33, 33, 58);
-       
-        /* background: #3a3f77; */
-/* background-color: rgb(2, 2, 77); */
+    padding-top: 3vmin;
 }
 .header-container {
-    max-width: 1920px;
-    margin: auto;
     display: flex;
     justify-content: space-between;
     padding-bottom: 2vmin;
-    border-bottom: 1px dotted lightgrey;
- 
+    /* border-bottom: 1px dotted lightgrey; */
 }
 .header__logo-link {
-    width: 400px;
-    height: 120px;
+    height: 100px;
     display: flex;
 }
 .logo-text {
     margin-left: 1vmin;
+    line-height: 100px;
     display: block;
     font-family: 'Redressed', cursive;
     font-size: 3vmin;
     color:white;
-}
-.logo-text-first {
-    display: block;
     color: lightblue;
 }
 
-.header__button {
-    width: 300px;
-    height: 100px;
+.header__right-item {
     text-align: center;
     font-family: 'Glegoo', serif;
     line-height: 100px;
-    border: 1px solid white;
     color: white;
     border-radius: 8px;
-    font-size: 2vmin;
+    font-size: 1.8vmin;
+}
+.header__right-item:not(:last-child) {
+    margin-right: 3vmin;
 }
 .button-post {
-    width: 400px;
+    padding: 0 2vmin;
     border: 2px solid white;
     font-weight: bold;
 }

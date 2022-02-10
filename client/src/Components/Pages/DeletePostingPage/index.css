@@ -1,0 +1,17 @@
+.delete-section {
+    width: 70%;
+    margin: auto;
+    opacity: 50%;
+}
+.delete__button {
+    padding: 3vmin;
+    width: 50%;
+    font-size: 3vmin;
+    border: 5px solid red;
+    background-color: lightblue;
+    border-radius: 12px;
+    color: red;
+    opacity: none;
+    display: block;
+    margin: auto;
+}

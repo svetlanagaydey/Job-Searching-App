@@ -35,8 +35,8 @@ const DeletePostingPage = () => {
 
     const printDeletingPosting = () => {
       return (
-        <section>
-          <div className="info-block">
+        <section className="delete-section">
+          <div className="posting">
 								<h3 className="job-title">{posting.details.title}</h3>
 								<div className="field">
 									<span className="field-name">Company: </span>
@@ -76,7 +76,7 @@ const DeletePostingPage = () => {
 								</div>
 							</div>
 
-              <input type="button" value="Delete Posting" onClick={() => deletePosting()}/>
+              <input type="button" className="delete__button" value="Delete Posting" onClick={() => deletePosting()}/>
         </section>
       )
     }

@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Glegoo&family=Indie+Flower&family=Marcellus+SC&family=Permanent+Marker&family=Rajdhani:wght@400;500&family=Redressed&family=Vast+Shadow&display=swap');
 
 .searching-button {
-  border-radius: 18px;
-  
+    width: 33%;
+    border-radius: 18px;
 }
 .serching-input {
-    margin: 0;
-    width: 400px;
-    padding: 2vmin;
+    width: 100%;
+    padding: 2vmin 0 2vmin 5vmin;
     border: 1px solid transparent;
     border-radius: 6px;
     font-family: 'Marcellus SC', serif;
     font-size: 1.4vmin;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     background-repeat: no-repeat;
-    background-position: right;
+    background-position-x: 20px;
+    background-position-y: center;
 }
 .search-location {
     background-image: url("images/loc.png");

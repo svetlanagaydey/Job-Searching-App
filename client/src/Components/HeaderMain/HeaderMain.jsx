@@ -8,19 +8,20 @@ const HeaderMain = () => {
   return (
 		<header className="header">
 			<div className="header-container">
+        
 				<Link to="/" className="header__logo-link">
 					<img src={logo}  className="header__logo" alt="logo"/>
-					<div className="logo-text">
-						<span className="logo-text-first">Find</span>
-						<span className="logo-text-second">Your Job</span>
-					</div>
+				  <span className="logo-text">Find Your Job</span>
 				</Link>
-				<Link to="/articles" className="header__button">
-					Articles
-				</Link>
-				<Link to="/employers" className="header__button button-post">
-					EMPLOYERS / POST JOB
-				</Link>
+
+				<div className="header__right">
+          <Link to="/articles" className="header__right-item">
+            Articles
+          </Link>
+          <Link to="/employers" className="header__right-item button-post">
+            EMPLOYERS / POST JOB
+          </Link>
+        </div>
 			</div>
 		</header>
   ) 
