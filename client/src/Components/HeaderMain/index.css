@@ -27,7 +27,7 @@
     line-height: 100px;
     color: white;
     border-radius: 8px;
-    font-size: 22px;
+    font-size: 26px;
 }
 .header__right-item:not(:last-child) {
     margin-right: 5vmin;

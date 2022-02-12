@@ -14,7 +14,8 @@
     font-size: 24px;
     padding-bottom: 1vmin;
 }
-.article-item:hover {
-    background-color: rgb(214, 236, 244);
+.article-item:hover,
+.article-item:active {
+    background-color: white;
     cursor: pointer;
 }

@@ -22,10 +22,22 @@
 .company-logo {
     width: 100px;
     height: 100px;
-    background-image: url(Images/v.png);
+    border: 1px solid lightgray;
 }
 .Microsoft-logo {
     background-image: url(Images/microsoft-logo.png);
+}
+.HP-logo {
+    background-image: url(Images/hp.png);
+}
+.WIX-logo {
+    background-image: url(Images/wix.png);
+}
+.Tesla-logo {
+    background-image: url(Images/tesla.png);
+}
+.Harmonic-logo {
+    background-image: url(Images/harmonic.png);
 }
 .posting-block {
     width: 86%;

@@ -10,9 +10,10 @@
 
 }
 .employers__input {
-    padding: 1.6vmin;
+    padding: 1.4vmin;
     width: 100%;
     font-size: 20px;
+    border-color: transparent;
     border-radius: 5px;
 }
 .eployers__input-block {
@@ -27,7 +28,7 @@
 
 .find-button {
     color: rgb(33, 33, 58);
-    padding: 1.5vmin 5vmin;
+    padding: 1.4vmin 5vmin;
     margin-left: 7vmin;
     background-color: #5bafc8;
     color: white;

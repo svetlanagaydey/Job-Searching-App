@@ -43,3 +43,6 @@
     background-color:rgb(244, 244, 244);
     
 }
+.search-button:hover {
+    background-color: #449eba;
+}
