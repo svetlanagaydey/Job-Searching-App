@@ -35,6 +35,8 @@
 }
 .Tesla-logo {
     background-image: url(Images/tesla.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
 }
 .Harmonic-logo {
     background-image: url(Images/harmonic.png);

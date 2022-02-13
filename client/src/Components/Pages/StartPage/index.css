@@ -46,3 +46,8 @@
 .search-button:hover {
     background-color: #449eba;
 }
+@media screen and (max-width: 650px) {
+    .container {
+        max-width: 650px;
+    }
+}
